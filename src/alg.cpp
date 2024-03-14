@@ -12,25 +12,21 @@ int cbinsearch(int *arr, int size, int value) {
             for (int i = m - 1; i >= 0; i--) {
                 if (arr[i] == value) {
                     c++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
             for (int i = m + 1; i < size; i++) {
                 if (arr[i] == value) {
                     c++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
             break;
-        }
-        else if (arr[m] < value) {
+        } else if (arr[m] < value) {
             l = m + 1;
-        }
-        else {
+        } else {
            r = m - 1;
         }
     }
